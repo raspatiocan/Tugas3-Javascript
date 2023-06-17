@@ -47,6 +47,6 @@ function totalQuantity(productBin, productCode){
 }
 
 const prompt = require("prompt-sync")({ sigint: true });
-const ProductCode = prompt("Inputkan ProductCode : ");
+const ProductCode = prompt("Input ProductCode : ");
 let totalQty = totalQuantity(productBin, ProductCode);
-console.log("Total Quantity Produk adalah " + totalQty);
+console.log("Total Quantity dari Produk adalah " + totalQty);
