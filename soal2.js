@@ -34,25 +34,19 @@ let productBin = {
     ],
     "message": "success"
   };
-// var quant = JSON.parse(JSON.stringify(productBin))
 
-//  = productBin;
-// console.log(productBin);
+function totalQuantity(productBin, productCode){
+  let total = 0;
+  let i;
+  for (i = 0; i < productBin.data.length; i++){
+    if (productBin.data[i].productCode === productCode){
+      total += productBin.data[i].quantity;
+    }
+  }
+  return total;
+}
 
-// var jsonData = JSON.parse(productBin);
-
-// for (var i = 0; i < jsonData.data.length; i++) {
-//   var quantity = jsonData.data[i];
-//   console.log(data.quantity);
-// }
-// let values = Object.values(productBin.data[1].quantity);
-
-// console.log(values)
-// console.log(productBin.data[0].quantity);
-
-// function totalQuantity(productBin, productCode){
-//   for (i = 0; i < productBin.data.length; i++){
-//     if (productBin.data[i].productCode)
-//   }
-
-// }
+const prompt = require("prompt-sync")({ sigint: true });
+const ProductCode = prompt("Inputkan ProductCode : ");
+let totalQty = totalQuantity(productBin, ProductCode);
+console.log("Total Quantity Produk adalah " + totalQty);
