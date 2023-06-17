@@ -48,11 +48,11 @@ let productBin = {
 // let values = Object.values(productBin.data[1].quantity);
 
 // console.log(values)
-console.log(productBin.data[0].quantity);
+// console.log(productBin.data[0].quantity);
 
-function totalQuantity(productBin, productCode){
-  for (i = 0; i < productBin.data.length; i++){
-    if (productBin.data[i].productCode)
-  }
+// function totalQuantity(productBin, productCode){
+//   for (i = 0; i < productBin.data.length; i++){
+//     if (productBin.data[i].productCode)
+//   }
 
-}
+// }
